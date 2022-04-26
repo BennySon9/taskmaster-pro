@@ -75,6 +75,7 @@ $("#task-form-modal .btn-primary").click(function () {
   }
 });
 
+// task text was clicked
 $(".list-group").on("click", "p", function () {
   var text = $(this).text().trim();
   var textInput = $("<textarea>").addClass("form-control").val("text");
@@ -82,6 +83,7 @@ $(".list-group").on("click", "p", function () {
   textInput.trigger("focus");
 });
 
+// editable field was un-focused
 $(".list-group").on("blur", "textarea", function () {
   // get the textarea's current value/text
   var text = $(this).val().trim();
